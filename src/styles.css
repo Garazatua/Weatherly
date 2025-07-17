@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  /* color: white; */
+  margin: 0;
+  font-family:
+    'Tektur',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+.hero {
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.search-input {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+.weatherly {
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  padding-left: 15%;
+}
+
+.error-message {
+  color: rgb(251, 128, 128);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+.weather-card {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 600px;
+  max-width: 90vw;
+  font-family: 'Segoe UI', sans-serif;
+  border: 1px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.weather-header h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.weather-time {
+  font-size: 0.9rem;
+  color: #eeeeee;
+}
+
+.weather-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-temp {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+.weather-temp .unit {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #eeeeee;
+}
+
+.weather-condition {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.weather-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.weather-detail {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.25rem;
+}
+
+.weather-detail:last-child {
+  border-bottom: none;
+}
+
+.cloudy {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://a-static.besthdwallpaper.com/cloudy-weather-in-desert-wallpaper-5120x2160-87730_16.jpg');
+  background-size: cover;
+}
+
+.sunny {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://wallpapercave.com/wp/wp4077277.jpg');
+  background-size: cover;
+}
+
+.rainy {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1519692933481-e162a57d6721?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFpbnxlbnwwfHwwfHx8MA%3D%3D');
+  background-size: cover;
+}
+
+.snowy {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.hdqwalls.com/wallpapers/snowy-mountain-during-day-time-5k-sh.jpg');
+  background-size: cover;
+}
+
+.foggy {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1685708280267-0e0744a8d0d9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8');
+  background-size: cover;
+  background-position: center;
+}
+
+.clear-night {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.pexels.com/photos/3801463/pexels-photo-3801463.jpeg?cs=srgb&dl=pexels-martin-mariani-2162253-3801463.jpg&fm=jpg');
+  background-size: cover;
+  background-position: center;
+}
